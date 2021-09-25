@@ -20,13 +20,7 @@ function compareName(colaA, colaB) {
 }
 
 function compareCalories(colaA, colaB) {
-    if (colaA.calories > colaB.calories) {
-        return 1;
-    } else if (colaA.calories === colaB.calories) {
-        return 0;
-    } else {
-        return -1;
-    }
+    return colaA.calories - colaB.calories;
 }
 
 function compareColor(colaA, colaB) {
@@ -40,13 +34,7 @@ function compareColor(colaA, colaB) {
 }
 
 function compareSold(colaA, colaB) {
-    if (colaA.sold > colaB.sold) {
-        return 1;
-    } else if (colaA.sold === colaB.sold) {
-        return 0;
-    } else {
-        return -1;
-    }
+    return colaA.sold - colaB.sold;
 }
 
 function printProducts(products) {
